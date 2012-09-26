@@ -23,7 +23,7 @@ from multiple sources:
 From search results, you will be able to perform several operations.
 Along with the command, you need to specify which element(s) in the
 list you want to select. You can for instance specify one entry using its
-intex, e.g. *3*. You can also specify
+index, e.g. *3*. You can also specify
 multiple entries by either separating them by commas: *4,5*, or by specifying a
 range: *1-5*. You can also select every results by using *\**.
 
