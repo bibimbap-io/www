@@ -49,5 +49,5 @@ Here is how a session can look like:
     
     bibimbap>
 
-...and that famous BDD paper is now imported in the *managed.bib* file.
+...and that famous BDD paper is now imported in the `managed.bib` file.
 Moreoever, the corresponding key is copied to the system clipboard.
