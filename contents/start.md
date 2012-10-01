@@ -1,12 +1,15 @@
 Get Started
 ===========
 
-The first step is to <a href="/downloads">download</a> *bibimbap* bootstrap,
-which will automatically download the latest version of *bibimbap*.
+The first step is to <a href="/downloads">download</a> *bibimbap* bootstrap.
 
-To run *bibimbap*, simply execute the jar in a console:
+    $ wget http://bibimbap.io/files/bibimbap-bootstrap.jar
+
+To run *bibimbap*, simply execute the bootstrap jar in a console. The bootstrap program will make sure you are running the latest version of *bibimbap*:
 
     $ java -jar bibimbap-bootstrap.jar
+    bibimbap jar not found. Downloading latest...
+    Installation complete.
              __    _ __    _           __
        ———  / /_  (_) /_  (_)___ ___  / /_  ____ _____  ——————
       ———  / __ \/ / __ \/ / __ `__ \/ __ \/ __ `/ __ \  ————
