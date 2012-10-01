@@ -4,7 +4,7 @@
         <p><span class="label">bibimbap</span> is a tool to import BibTeX entries from various sources. It runs in the console and is designed to be simple and fast. <span class="label">bibimbap</span> 
 is simply the easiest way to manage your BibTeX bibliographies. Be advised that 
 it still won't read the papers for you, though.</p>
-        <p><a class="btn btn-success btn-large" href="/files/bibimbap-latest.jar"><i class="icon-hdd icon-white"></i> Download Latest</a></p>
+        <p><a class="btn btn-success btn-large" href="/files/bibimbap-bootstrap.jar"><i class="icon-hdd icon-white"></i> Download</a></p>
       </div>
 
       <!-- Example row of columns -->

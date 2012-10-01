@@ -1,20 +1,25 @@
       <h1>Downloads</h1>
-      <h2>Latest Version</h2>
-      <p>The latest version is automatically build whenever we push a change to
-our github repository. Since <span class="label">bibimbap</span> is of course
-entirely bug-free, this version should be safe to use at your own risk!</p>
+      <h2>Bootstrap</h2>
+      <p>By running <span class="label">bibimbap</span> using the bootstrap
+jar file, you will always be running the latest stable
+version. The check is performed when starting <span 
+class="label">bibimbap</span>, and the updates are automatic.</p>
 
       <table class="table">
         <thead>
           <tr>
-            <td>bibimbap latest</td>
-            <td><?php echo date("r", filemtime(FILES_PATH.'/bibimbap-latest.jar')); ?></td>
-            <td><a class="btn btn-success" href="/files/bibimbap-latest.jar"><i class="icon-hdd icon-white"></i> Download</a></td>
+            <td>bibimbap bootstrap</td>
+            <td><?php echo date("r", filemtime(FILES_PATH.'/bibimbap-bootstrap.jar')); ?></td>
+            <td>
+                <a class="btn btn-success" href="/files/bibimbap-bootstrap.jar"><i class="icon-hdd icon-white"></i> Download</a>
+                <a class="btn" href="/files/bibimbap-bootstrap.jar.md5"><i class="icon-lock icon-white"></i> md5</a></td>
           </tr>
         </thead>
       </table>
 
-      <h2>Archives</h2>
+
+      <h2>Available Versions</h2>
+      <p>You can also directly run specific versions of <span class="label">bibimbap</span> by downlading and executing the corresponding jar files directly</p>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -34,7 +39,10 @@ entirely bug-free, this version should be safe to use at your own risk!</p>
           <tr>
             <td>'.fileVersion($file).'</td>
             <td>'.date("r", filemtime($file)).'</td>
-            <td><a class="btn btn-success" href="/files/'.basename($file).'"><i class="icon-hdd icon-white"></i> Download</a></td>
+            <td>
+                <a class="btn btn-success" href="/files/'.basename($file).'"><i class="icon-hdd icon-white"></i> Download</a>
+                <a class="btn" href="/files/'.basename($file).'.md5"><i class="icon-lock icon-white"></i> md5</a>
+            </td>
           </tr>';
         }
         ?>
