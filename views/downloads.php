@@ -5,6 +5,14 @@ jar file, you will always be running the latest stable
 version. The check is performed when starting <span 
 class="label">bibimbap</span>, and the updates are automatic.</p>
 
+      <p><span class="label">bibimbap</span> installs itself in <code>$HOME/.bibimbap/</code>. To get started, use the download button below, or try for instance:</p>
+      <pre><code>
+cd ~/bin
+wget http://bibimbap.io/files/bibimbap-bootstrap.jar
+echo "java -jar ~/bin/bibimbap-bootstrap.jar \$@" > bibimbap
+chmod u+x bibimbap
+      </code></pre>
+
       <table class="table table-striped">
         <thead>
           <tr>
