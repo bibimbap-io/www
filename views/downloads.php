@@ -5,16 +5,24 @@ jar file, you will always be running the latest stable
 version. The check is performed when starting <span 
 class="label">bibimbap</span>, and the updates are automatic.</p>
 
-      <table class="table">
+      <table class="table table-striped">
         <thead>
           <tr>
-            <td>bibimbap bootstrap</td>
+            <th>File</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>bibimbap</td>
             <td><?php echo date("r", filemtime(FILES_PATH.'/bibimbap-bootstrap.jar')); ?></td>
             <td>
                 <a class="btn btn-success" href="/files/bibimbap-bootstrap.jar"><i class="icon-hdd icon-white"></i> Download</a>
-                <a class="btn" href="/files/bibimbap-bootstrap.jar.md5"><i class="icon-lock icon-white"></i> md5</a></td>
+                <a class="btn" href="/files/bibimbap-bootstrap.jar.md5"><i class="icon-lock"></i> md5</a>
+            </td>
           </tr>
-        </thead>
+        </tbody>
       </table>
 
 
@@ -41,7 +49,7 @@ class="label">bibimbap</span>, and the updates are automatic.</p>
             <td>'.date("r", filemtime($file)).'</td>
             <td>
                 <a class="btn btn-success" href="/files/'.basename($file).'"><i class="icon-hdd icon-white"></i> Download</a>
-                <a class="btn" href="/files/'.basename($file).'.md5"><i class="icon-lock icon-white"></i> md5</a>
+                <a class="btn" href="/files/'.basename($file).'.md5"><i class="icon-lock"></i> md5</a>
             </td>
           </tr>';
         }
