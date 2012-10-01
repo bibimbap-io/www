@@ -1,13 +1,12 @@
 Get Started
 ===========
 
-The first step is to <a href="/downloads">download</a> *bibimbap*,
-which is shipped in a self-contained jar file that already includes every 
-dependencies.
+The first step is to <a href="/downloads">download</a> *bibimbap* bootstrap,
+which will automatically download the latest version of *bibimbap*.
 
 To run *bibimbap*, simply execute the jar in a console:
 
-    $ java -jar bibimbap-latest.jar
+    $ java -jar bibimbap-bootstrap.jar
              __    _ __    _           __
        ———  / /_  (_) /_  (_)___ ___  / /_  ____ _____  ——————
       ———  / __ \/ / __ \/ / __ `__ \/ __ \/ __ `/ __ \  ————
