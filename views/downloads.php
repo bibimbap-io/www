@@ -5,12 +5,10 @@ program. The bootstrapper will make sure you are always running the latest stabl
 The check is performed each time the program is started, and the updates are automatic.</p>
 
       <p><span class="label">bibimbap</span> installs itself in <code>$HOME/.bibimbap/</code>. To get started, use the download button below, or try for instance:</p>
-      <pre><code>
-cd ~/bin
+      <pre><code>cd ~/bin
 wget http://bibimbap.io/files/bibimbap-bootstrap.jar
 echo "java -jar ~/bin/bibimbap-bootstrap.jar \$@" > bibimbap
-chmod u+x bibimbap
-      </code></pre>
+chmod u+x bibimbap</code></pre>
 
           <a class="btn btn-success" href="/files/bibimbap-bootstrap.jar"><i class="icon-hdd icon-white"></i> Download Bootstrap</a>
           <a class="btn" href="/files/bibimbap-bootstrap.jar.md5"><i class="icon-lock"></i> md5</a>
