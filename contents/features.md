@@ -206,6 +206,63 @@ command:
       ➤  Consolidated file saved to pnew2-consolidated.bib
 
 
+*bibimbap* allows you to merge multiple bibliographies together using the
+*merge* command. This command will essentially perform a search (using the
+selected sources) for each entry found in the file to merge. It is a good idea
+to add the file to merge as a source before merging it. Merging will only
+search, you can then choose what to import in your managed.bib using the
+*import* command.
+
+    bimbap> sources add pnew2.bib
+....
+      ➤  Expected : identifier (414:7)
+      ➤  Constant string Cambridge is undefined. (2354:18)
+      ➤  Source added!
+....
+    bibimbap> sources disable 2,3
+....
+      ➤  Source(s) disabled
+....
+    bibimbap> sources
+    
+     on  [0] managed file
+     on  [1] local cache
+     off [2] DBLP
+     off [3] Open Library
+     on  [4] bibtex: pnew2.bib
+    
+    bibimbap> merge pnew2.bib
+    
+      ➤  Expected : identifier (414:7)
+      ➤  Constant string Cambridge is undefined. (2354:18)
+        18% (40/212)
+        37% (80/212)
+        56% (120/212)
+        75% (160/212)
+        94% (200/212)
+      ➤  Found 212 entries (0 modified):
+        ...
+        [150] J.E.Barnes, P.Hut, "A hierarchical O(N log N) force-calculation algorithm", Nature, 1986
+        [151] M.Barnett, K.R.M.Leino, "Weakest-precondition of unstructured programs", PASTE, 2005
+        [152] M.Barnett, W.Schulte, "Contracts, Components, and their Runtime Verification on the .NET Platform", ?, 2002
+        [153] M.Barnett, K.R.M.Leino, W.Schulte, "The Spec# Programming System: An Overview", CASSIS: Int. Workshop on Construction and Analysis of Safe, Secure and Interoperable Smart devices, 2004
+        [154] M.Barnett et al., "Boogie: A Modular Reusable Verifier for Object-Oriented Programs", FMCO, 2005
+        [155] M.Barnett et al., "Verification of Object-Oriented Programs with Invariants", Formal Techniques for Java-like Programs, Available as Technical Report 408, Department of Computer Science, ETH, 2003
+        [156] M.Barnett, D.A.Naumann, W.Schulte, Q.Sun, "99.44% pure: Useful Abstractions in Specifications", Proc.ECOOP Workshop on Formal Techniques for Java-like Programs, 2004
+        [157] D.Bartetzko, C.Fischer, M.Möller, H.Wehrheim, "Jass--Java with Assertions", RV01, 2001
+        ...
+    
+    bibimbap> import *
+
+
+You can also parse, check, and reformat existing files using the *lint* command:
+
+    bibimbap> lint pnew2.bib
+    
+      ➤  Expected : identifier (414:7)
+      ➤  Constant string Cambridge is undefined. (2354:18)
+      ➤  Reformatted file saved to pnew2-lint.bib
+
 You can also parse, check, and reformat existing files using the *lint* command:
 
     bibimbap> lint pnew2.bib
