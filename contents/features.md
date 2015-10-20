@@ -214,15 +214,15 @@ search, you can then choose what to import in your managed.bib using the
 *import* command.
 
     bimbap> sources add pnew2.bib
-....
+    
       ➤  Expected : identifier (414:7)
       ➤  Constant string Cambridge is undefined. (2354:18)
       ➤  Source added!
-....
+    
     bibimbap> sources disable 2,3
-....
+    
       ➤  Source(s) disabled
-....
+    
     bibimbap> sources
     
      on  [0] managed file
@@ -255,15 +255,7 @@ search, you can then choose what to import in your managed.bib using the
     bibimbap> import *
 
 
-You can also parse, check, and reformat existing files using the *lint* command:
-
-    bibimbap> lint pnew2.bib
-    
-      ➤  Expected : identifier (414:7)
-      ➤  Constant string Cambridge is undefined. (2354:18)
-      ➤  Reformatted file saved to pnew2-lint.bib
-
-You can also parse, check, and reformat existing files using the *lint* command:
+Finally, you can also parse, check, and reformat existing files using the *lint* command:
 
     bibimbap> lint pnew2.bib
     

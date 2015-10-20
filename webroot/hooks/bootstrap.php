@@ -1,3 +1,3 @@
 <?php
 //update yourself
-shell_exec("/var/www/git/bibimbap-bootstrap/update.sh 2>&1 >> /home/wwwrun/croustillant.ch/bibimbap/webroot/updates.log");
+shell_exec("/home/www-data/git-repos/bibimbap-bootstrap/scripts/update.sh 2>&1 >> /home/www-data/bibimbap/webroot/updates.log");
